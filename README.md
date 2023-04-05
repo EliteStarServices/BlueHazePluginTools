@@ -18,7 +18,7 @@ Start typing and the list of plugins will be filtered showing only the plugin na
 
 ### BH Plugin Tool is an API for Local and Remote Plugin Management
 
-Create JSON API Files and Extended.
+Create JSON API Files and Extended Plugin Information Display on Dashboard.
 
 ### See Which Plugins Are Active on Each Site in a Mulisite Network
 
