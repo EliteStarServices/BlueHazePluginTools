@@ -1,10 +1,10 @@
-# BH Plugin Tool was Adapted from Better Plugins Plugin
+## BH Plugin Tool was Adapted from Better Plugins Plugin
 
-## Plugin & Theme Download Links Added
+### Plugin & Theme Download Links Added
 
 Easily Download Plugins and Themes in ZIP Format from the Admin Dashboard.
 
-## Install Plugins From Public URL
+### Install Plugins From Public URL
 
 Install Plugins Using The Download URL Instead of Downloading then Uploading.
 
@@ -22,4 +22,4 @@ Create JSON API Files and Extended.
 
 ## See Which Plugins Are Active on Each Site in a Mulisite Network
 
-On Multisite, see which sites a plugin is active on and get a list of plugins that aren't activated on any site and could be safely deleted.
+On Multisite, see which sites a plugin is active and which plugins aren't activated on any site.
