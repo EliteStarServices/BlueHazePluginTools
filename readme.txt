@@ -39,7 +39,7 @@ The Plugins Report feature located under the Network Admin Plugins section will 
 == Changelog ==
 
 = 0.9.2 =
-4/x/23
+4/5/23
 * Rename to BH Plugin Tools
 * Initial Code Cleanup for Beta Release
 * Add /inc Folder and Reconfigure File Structure
