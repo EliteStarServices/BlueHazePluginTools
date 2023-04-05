@@ -654,7 +654,7 @@ class BPP_Compare_Site_Plugins
 
 
 		// WRITE JSON FILE WITH SUFFIX
-		$upload_dir = plugin_dir_path(__DIR__) . 'bh-plugin-tool/data/plugins' . $fileKey . '.json';
+		$upload_dir = plugin_dir_path(__DIR__) . 'bh-plugin-tools/data/plugins' . $fileKey . '.json';
 		//echo "JSON File Path:<br>";
 		//echo $upload_dir."<hr>";
 		file_put_contents($upload_dir, $bhPlugAPI);
