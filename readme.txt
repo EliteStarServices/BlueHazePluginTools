@@ -8,8 +8,7 @@ Stable tag: 0.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin makes your life easier by providing tools for filtering and reporting plugins.
-* Modified Better Plugins Plugin for use as Plugin API and Tool
+* BH / ESS Plugin API and Tool
 
 == Description ==
 
