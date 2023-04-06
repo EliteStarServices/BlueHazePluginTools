@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/donate/?hosted_button_id=P3CXN3JZVSVG2
 Tags: admin, tools, plugins, management, productivity, multisite,
 Requires at least: 3.0.1
 Tested up to: 6.2
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,10 @@ Get Info about possibly abandoned, 3rd Party or Unofficial plugins on the dashbo
 The Plugins Report feature located under the Network Admin Plugins section will show which sites a plugin is active on. It will also give you a list of plugins that aren't activated on any site.
 
 == Changelog ==
+
+= 0.9.4 =
+4/x/23
+* Fix Dashboard Alert Widget URL for BH Plugin Tools
 
 = 0.9.2 =
 4/5/23

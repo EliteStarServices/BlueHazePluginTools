@@ -410,8 +410,8 @@ class PluginsCondition {
 			$plcaution = $this->plugins_condition_caution();
 
 			if ( is_multisite() ) {
-				$installed_plugin_url = admin_url( 'plugins.php?page=bpp-site-plugins' );
-				$installed_plugin_html = '<a href="' . $installed_plugin_url . '" style="text-decoration: none; word-break: break-all;">' . __( 'BH Plugin API' ) . '</a>';
+				$installed_plugin_url = admin_url( 'plugins.php?page=bh-site-plugins' );
+				$installed_plugin_html = '<a href="' . $installed_plugin_url . '" style="text-decoration: none; word-break: break-all;">' . __( 'BH Plugin Tools' ) . '</a>';
 				$network_plugin_url = network_admin_url( 'plugins.php' );
 				$network_plugin_html = '<a href="' . $network_plugin_url . '" style="text-decoration: none; word-break: break-all;">' . __( 'Network Plugin' ) . '</a>';
 			} else {

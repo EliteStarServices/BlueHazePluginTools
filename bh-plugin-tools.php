@@ -3,7 +3,7 @@
 Plugin Name: BH Plugin Tools
 Plugin URI: https://elite-star-services.com/plugins/
 Description: Modified from Better Plugins Plugin by Russell Heimlich for use as a Plugin API & Management Tool
-Version: 0.9.2
+Version: 0.9.3
 Requires at least: 3.0.1
 Requires PHP: 5.6
 Author: Elite Star Services
