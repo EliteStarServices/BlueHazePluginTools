@@ -38,7 +38,7 @@ The Plugins Report feature located under the Network Admin Plugins section will 
 
 == Changelog ==
 
-= 0.9.4 =
+= 0.9.3 =
 4/x/23
 * Fix Dashboard Alert Widget URL for BH Plugin Tools
 
