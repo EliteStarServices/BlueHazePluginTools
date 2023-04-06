@@ -50,7 +50,7 @@ function bh_piurl_page()
             $overwrite = 'update-plugin';
             $type  = 'web';
 
-            //$upgrader = new Plugin_Upgrader(new Plugin_Installer_Skin(compact('title', 'nonce', 'overwrite')));
+            $upgrader = new Plugin_Upgrader(new Plugin_Installer_Skin(compact('title', 'nonce', 'overwrite')));
             $upgrader->install($zip_url);
         } else {
             echo '<b>Error: URL is empty or invalid</b>';
