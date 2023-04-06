@@ -11,7 +11,7 @@ if (is_multisite()) {
 function bh_piurl_register_menu_item()
 {
     //        bh_piurl_activate_php_debug();
-    add_submenu_page('plugins.php', 'Install from URL', 'Install from URL', 'manage_options', 'bh_piurl_page', 'bh_piurl_page');
+    add_submenu_page('plugins.php', 'Install from URL', 'Install from URL', 'edit_plugins', 'bh_piurl_page', 'bh_piurl_page');
 }
 
 function bh_piurl_page()

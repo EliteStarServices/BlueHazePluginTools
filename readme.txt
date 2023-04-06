@@ -41,6 +41,7 @@ The Plugins Report feature located under the Network Admin Plugins section will 
 = 0.9.3 =
 4/x/23
 * Fix Dashboard Alert Widget URL for BH Plugin Tools
+* Update Install by URL Access Security
 
 = 0.9.2 =
 4/5/23
