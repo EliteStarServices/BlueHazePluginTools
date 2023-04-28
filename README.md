@@ -12,10 +12,6 @@ Install Plugins Using The Download URL Instead of Downloading then Uploading.
 
 Adds Additional Plugin Information to the API & Installed Plugins Page, plus Alerts on the Dashboard.
 
-### Quickly Find the Plugin You're Looking For
-
-Start typing and the list of plugins will be filtered showing only the plugin names that match your search.
-
 ### BH Plugin Tool is an API for Local and Remote Plugin Management
 
 Create JSON API Files and Extended Plugin Information Display on Dashboard.

@@ -157,78 +157,7 @@ class BPP_Compare_Site_Plugins
 
 
 
-
-
-
-
-
-		// CREATE DATABASE TESTING
-		global $wpdb;
-		$table_name = $wpdb->prefix . 'bh_plugin_data';
-		if ($wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $table_name)) === $table_name) {
-			echo 'Table ' . $table_name . ' Found!<hr>';
-		} else {
-			echo 'Table ' . $table_name . ' Does Not Exist!<hr>';
-
-			/*
-				$charset_collate = $wpdb->get_charset_collate();
-
-				$sql = "CREATE TABLE $table_name (
-				  id mediumint(9) NOT NULL AUTO_INCREMENT,
-				  time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
-				  name tinytext NOT NULL,
-				  text text NOT NULL,
-				  url varchar(55) DEFAULT '' NOT NULL,
-				  PRIMARY KEY  (id)
-				) $charset_collate;";
-	
-				require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-				dbDelta( $sql );
-			*/
-
-
-			// INSERT DATA - HERE ENTERS DATA ONCE WHEN TABLE CREATED
-			/*
-					$welcome_name = 'Mr. WordPress';
-					$welcome_text = 'Congratulations, you just completed the installation!';
-
-					$table_name = $wpdb->prefix . 'bh_plugin_data';
-
-					$wpdb->insert( 
-						$table_name, 
-						array( 
-							'time' => current_time( 'mysql' ), 
-							'name' => $welcome_name, 
-							'text' => $welcome_text, 
-						) 
-					);
-					*/
-		}
-
-
-		// INSERT DATA - HERE DOES IT EVERY TIME
-		/*
-					$welcome_name = 'Mr. WordPress';
-					$welcome_text = 'Congratulations, you just completed the installation!';
-
-					$table_name = $wpdb->prefix . 'bh_plugin_data';
-
-					$wpdb->insert( 
-						$table_name, 
-						array( 
-							'time' => current_time( 'mysql' ), 
-							'name' => $welcome_name, 
-							'text' => $welcome_text, 
-						) 
-					);
-					*/
-
-
-
-
-
-
-
+		
 
 		// ADD UNIQUE FILE TOKEN TO WP-CONFIG IF NOT EXISTS
 		require ABSPATH . 'wp-config.php';
