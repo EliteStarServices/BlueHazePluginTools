@@ -11,6 +11,8 @@ Author URI: https://elite-star-services.com
 */
 
 
+
+/*
 // Make the lists of plugins filterable as you type thanks to this handy snippit of JavaScript.
 function bpp_plugins_footer()
 {
@@ -38,6 +40,8 @@ function bpp_plugins_footer()
 <?php
 }
 add_action('admin_footer-plugins.php', 'bpp_plugins_footer');
+*/
+
 
 
 // CHECK IF UPGRADE AVAILABLE
@@ -50,6 +54,7 @@ $MyUpdateChecker = PucFactory::buildUpdateChecker(
 	__FILE__, //Full path to the main plugin file.
 	'bh-plugin-tools' //Plugin slug. Usually it's the same as the name of the directory.
 );
+
 
 
 // List Site Plugin Information to Dashboard, as JSON and BH Plugins API.

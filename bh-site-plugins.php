@@ -156,11 +156,8 @@ class BPP_Compare_Site_Plugins
 		$json = json_encode($this->sites_plugins);
 
 
-
-		
-
 		// ADD UNIQUE FILE TOKEN TO WP-CONFIG IF NOT EXISTS
-		require ABSPATH . 'wp-config.php';
+		require_once ABSPATH . 'wp-config.php';
 		if (!defined('BH_KEY')) {
 
 			// WRITE KEY TO WP-CONFIG
@@ -394,12 +391,17 @@ class BPP_Compare_Site_Plugins
 
 
 
-						// CREATE SHORT DESCRIPTION (truncate at first period or 125 characters)
+						// CREATE SHORT DESCRIPTION (truncate at first period or 120 characters)
 						if ($key == "Description") {
 							$pre_desc = explode('.', $value);
 							$sho_desc = $pre_desc[0];
 							$sho_desc = wp_strip_all_tags($sho_desc);
-							$pos = strpos($sho_desc, ' ', 120);
+							if (version_compare(PHP_VERSION, '8.0.0', '>')) {
+								$pos = str_contains($sho_desc, ' ');
+							} else { 
+								$pos = strpos($sho_desc, ' ', 120); 
+							}
+							//$pos = str_contains($sho_desc, ' ');
 							$descOut = (strlen($sho_desc) > 120) ? substr($sho_desc, 0, $pos) . '...' : $sho_desc . '.';
 							$bhPlugin['all'][$cnt - 1]['Description'] = $descOut;
 						}

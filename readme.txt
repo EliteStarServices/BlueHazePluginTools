@@ -39,8 +39,9 @@ The Plugins Report feature located under the Network Admin Plugins section will 
 == Changelog ==
 
 = 0.9.4 =
-x/x/23
+5/4/23
 * Code Cleanup
+* PHP 8 Compatibility
 
 = 0.9.3 =
 4/6/23

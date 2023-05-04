@@ -26,7 +26,7 @@ class PluginsConditionAdmin {
 
 	public function __construct() {
 
-		add_action( 'init', array( $this, 'register_settings' ) );
+//		add_action( 'init', array( $this, 'register_settings' ) );
 
 		add_action( 'admin_menu', array( $this, 'plugin_menu' ) );
 		add_filter( 'plugin_action_links', array( $this, 'settings_link' ), 10, 2 );
@@ -42,7 +42,7 @@ class PluginsConditionAdmin {
 			$this_plugin = 'bh-plugin-tools/bh-plugin-tools.php';
 		}
 		if ( $file == $this_plugin ) {
-			$links[] = '<a href="' . admin_url( 'options-general.php?page=BHPluginTools' ) . '">' . __( 'Settings' ) . '</a>';
+			$links[] = '<a href="' . admin_url( 'plugins.php?page=bh-plugin-tools' ) . '">' . __( 'Settings' ) . '</a>';
 		}
 		return $links;
 	}
@@ -255,7 +255,7 @@ class PluginsConditionAdmin {
 	/** ==================================================
 	 * Settings Register
 	 */
-	/*
+/*
 	public function register_settings() {
 
 		if ( ! get_option( 'plg_cond_notify_interval' ) ) {
@@ -265,7 +265,7 @@ class PluginsConditionAdmin {
 		}
 
 	}
-	*/
+*/
 
 
 }
