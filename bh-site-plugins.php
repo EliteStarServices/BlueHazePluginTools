@@ -280,9 +280,11 @@ class BPP_Compare_Site_Plugins
 
 
 
-						// SKIP ENTRIES IF NO API & NOT ACTIVE - NEED TO VERIFY MULTISITE / SINGLE SITE OPERATION
-						// MULTISITE DOES NOT PULL PROPER WP API DATA IF PLUGIN NOT ACTIVE
-						if (!in_array($plu, $isActive) && !in_array($plu, $this->sites_plugins['network_active'])) {
+						// SKIP ENTRIES IF NO API & NOT ACTIVE
+						// MULTISITE DOES NOT PULL WP API DATA IF PLUGIN NOT ACTIVE
+						//if (!in_array($plu, $isActive) && !in_array($plu, $this->sites_plugins['network_active'])) {
+						// Changed line above to line below for php8
+						if (!$isActive && !$this->sites_plugins['network_active']) {
 							echo '<b>'.$slug.'</b> was Skipped | Plugin Not Active or No API Data Found!<br>&nbsp;<br>';
 							$skp += 1;
 							continue;
@@ -307,6 +309,7 @@ class BPP_Compare_Site_Plugins
 							var_dump($call_apis);
 							echo '</pre><hr>';
 							*/
+
 					}
 					//echo 'ALL PLUGINS API ARRAY<pre>';
 					//var_dump($call_api);

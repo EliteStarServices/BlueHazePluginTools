@@ -3,43 +3,11 @@
 Plugin Name: BH Plugin Tools
 Plugin URI: https://elite-star-services.com/plugins/
 Description: Modified from Better Plugins Plugin by Russell Heimlich for use as a Plugin API & Management Tool
-Version: 0.9.4
-Requires at least: 3.0.1
+Version: 0.9.5
+Requires at least: 4.9
 Requires PHP: 5.6
 Author: Elite Star Services
 Author URI: https://elite-star-services.com
-*/
-
-
-
-/*
-// Make the lists of plugins filterable as you type thanks to this handy snippit of JavaScript.
-function bpp_plugins_footer()
-{
-?>
-	<script>
-		// via https://github.com/charliepark/faq-patrol
-		// extend :contains to be case-insensitive; via http://stackoverflow.com/questions/187537/
-		jQuery.expr[':'].contains = function(a, i, m) {
-			return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
-		};
-
-		jQuery(document).ready(function($) {
-			$('#plugin-search-input').keyup(function() {
-				$val = $(this).val();
-				if ($val.length < 2) {
-					$("#the-list > tr").show();
-				} else {
-					$("#the-list > tr").hide();
-					$("#the-list .plugin-title strong:contains(" + $val + ")").parent().parent().show();
-				}
-			}).focus();
-
-		});
-	</script>
-<?php
-}
-add_action('admin_footer-plugins.php', 'bpp_plugins_footer');
 */
 
 
